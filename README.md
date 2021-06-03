@@ -5,8 +5,8 @@ Sunshine is a Gamestream host for Moonlight
 [![Downloads](https://img.shields.io/github/downloads/Loki-47-6F-64/sunshine/total)](https://github.com/Loki-47-6F-64/sunshine/releases)
 
 - [Download Releases](https://github.com/Loki-47-6F-64/sunshine/releases)
-- [Setup](README.md#setup)
 - [Troubleshooting](README.md#troubleshooting) 
+- [Setup](README.md#setup)
 - [Usage](README.md#usage)
 - [Building](README.md#building)
 - [Credits](README.md#credits)
@@ -64,7 +64,7 @@ sunshine needs access to uinput to create mouse and gamepad events:
 	- When this happens, the video portion of the stream appears to be frozen.
 	- This is rare enough that using this for the desktop environment is tolerable (in my opinion), however for gaming not so much.
 
-# Trouleshooting:
+# Troubleshooting:
 
 ## Linux
 - If you get "Could not create Sunshine Gamepad: Permission Denied", ensure you are part of the group "input":
