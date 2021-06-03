@@ -5,9 +5,9 @@ Sunshine is a Gamestream host for Moonlight
 [![Downloads](https://img.shields.io/github/downloads/Loki-47-6F-64/sunshine/total)](https://github.com/Loki-47-6F-64/sunshine/releases)
 
 - [Download Releases](https://github.com/Loki-47-6F-64/sunshine/releases)
-- [Troubleshooting](README.md#troubleshooting) 
 - [Setup](README.md#setup)
 - [Usage](README.md#usage)
+- [Troubleshooting](README.md#troubleshooting) 
 - [Building](README.md#building)
 - [Credits](README.md#credits)
 
