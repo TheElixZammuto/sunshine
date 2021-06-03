@@ -76,8 +76,6 @@ sunshine needs access to uinput to create mouse and gamepad events:
 	3. restart sunshine
 
 # Building
-- [Linux](README.md#linux)
-- [Windows](README.md#windows-10)
 
 ## Linux
 
