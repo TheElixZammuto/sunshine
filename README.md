@@ -4,30 +4,19 @@ Sunshine is a Gamestream host for Moonlight
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/cgrtw2g3fq9b0b70/branch/master?svg=true)](https://ci.appveyor.com/project/loki-47-6F-64/sunshine/branch/master)
 [![Downloads](https://img.shields.io/github/downloads/Loki-47-6F-64/sunshine/total)](https://github.com/Loki-47-6F-64/sunshine/releases)
 
+- [Download Releases](https://github.com/Loki-47-6F-64/sunshine/releases)
+- [Setup](README.md#setup)
+- [Troubleshooting](README.md#troubleshooting) 
+- [Usage](README.md#usage)
 - [Building](README.md#building)
 - [Credits](README.md#credits)
 
-# Building
-- [Linux](README.md#linux)
-- [Windows](README.md#windows-10)
+# Setup
+
+## Windows 10
+- **OPTIONAL** Gamepad support: Download and run 'ViGEmBus_Setup_1.16.116.exe' from [https://github.com/ViGEm/ViGEmBus/releases]
 
 ## Linux
-
-### Requirements:
-Ubuntu 20.04:
-Install the following
-```
-sudo apt install cmake libssl-dev libavdevice-dev libboost-thread-dev libboost-filesystem-dev libboost-log-dev libpulse-dev libopus-dev libxtst-dev libx11-dev libxrandr-dev libxfixes-dev libevdev-dev libxcb1-dev libxcb-shm0-dev libxcb-xfixes0-dev
-```
-
-### Compilation:
-- `git clone https://github.com/loki-47-6F-64/sunshine.git --recurse-submodules`
-- `cd sunshine && mkdir build && cd build`
-- `cmake ..`
-- `make -j ${nproc}`
-
-
-### Setup:
 sunshine needs access to uinput to create mouse and gamepad events:
 - Add user to group 'input':
 	`usermod -a -G input $USER`
@@ -52,35 +41,7 @@ sunshine needs access to uinput to create mouse and gamepad events:
 
 - `assets/apps.json` is an [example](README.md#application-list) of a list of applications that are started just before running a stream
 
-### Trouleshooting:
-- If you get "Could not create Sunshine Gamepad: Permission Denied", ensure you are part of the group "input":
-	- `groups $USER`
-	
-- If Sunshine sends audio from the microphone instead of the speaker, try the following steps:
- 	1. `$ pacmd list-sources | grep "name:"` or `$ pactl info | grep Source` if running pipewire.
-	2. Copy the name to the configuration option "audio_sink"
-	3. restart sunshine
-
-## Windows 10
-
-### Requirements:
-
-	mingw-w64-x86_64-openssl mingw-w64-x86_64-cmake mingw-w64-x86_64-toolchain mingw-w64-x86_64-opus mingw-w64-x86_64-x265 mingw-w64-x86_64-boost git yasm nasm diffutils make
-
-### Compilation:
-- `git clone https://github.com/loki-47-6F-64/sunshine.git --recursive`
-- `cd sunshine && mkdir build && cd build`
-- `cmake -G"Unix Makefiles" ..`
-- `make`
-
-### Setup:
-- **OPTIONAL** Gamepad support: Download and run 'ViGEmBus_Setup_1.16.116.exe' from [https://github.com/ViGEm/ViGEmBus/releases]
-
-
-
-# Common 
-
-## Usage:
+# Usage 
 - run "sunshine path/to/sunshine.conf"
 - If running for the first time, make sure to note the username and password Sunshine showed to you, since you **cannot get back later**!
 - In Moonlight: Add PC manually
@@ -103,6 +64,47 @@ sunshine needs access to uinput to create mouse and gamepad events:
 	- When this happens, the video portion of the stream appears to be frozen.
 	- This is rare enough that using this for the desktop environment is tolerable (in my opinion), however for gaming not so much.
 
+# Trouleshooting:
+
+## Linux
+- If you get "Could not create Sunshine Gamepad: Permission Denied", ensure you are part of the group "input":
+	- `groups $USER`
+	
+- If Sunshine sends audio from the microphone instead of the speaker, try the following steps:
+ 	1. `$ pacmd list-sources | grep "name:"` or `$ pactl info | grep Source` if running pipewire.
+	2. Copy the name to the configuration option "audio_sink"
+	3. restart sunshine
+
+# Building
+- [Linux](README.md#linux)
+- [Windows](README.md#windows-10)
+
+## Linux
+
+### Requirements:
+Ubuntu 20.04:
+Install the following
+```
+sudo apt install cmake libssl-dev libavdevice-dev libboost-thread-dev libboost-filesystem-dev libboost-log-dev libpulse-dev libopus-dev libxtst-dev libx11-dev libxrandr-dev libxfixes-dev libevdev-dev libxcb1-dev libxcb-shm0-dev libxcb-xfixes0-dev
+```
+
+### Compilation:
+- `git clone https://github.com/loki-47-6F-64/sunshine.git --recurse-submodules`
+- `cd sunshine && mkdir build && cd build`
+- `cmake ..`
+- `make -j ${nproc}`
+
+## Windows 10
+
+### Requirements:
+
+	mingw-w64-x86_64-openssl mingw-w64-x86_64-cmake mingw-w64-x86_64-toolchain mingw-w64-x86_64-opus mingw-w64-x86_64-x265 mingw-w64-x86_64-boost git yasm nasm diffutils make
+
+### Compilation:
+- `git clone https://github.com/loki-47-6F-64/sunshine.git --recursive`
+- `cd sunshine && mkdir build && cd build`
+- `cmake -G"Unix Makefiles" ..`
+- `make`
 
 ## Credits:
 - [Simple-Web-Server](https://gitlab.com/eidheim/Simple-Web-Server)
