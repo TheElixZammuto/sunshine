@@ -1,3 +1,7 @@
+---
+parent: Building
+nav_order: 1
+---
 # Building on Linux
 ## Requirements:
 

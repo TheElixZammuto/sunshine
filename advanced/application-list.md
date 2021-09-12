@@ -1,3 +1,7 @@
+---
+parent: Advanced
+nav_order: 2
+---
 ## Application List
 **Note:** You can change the Application List in the "Apps" section of the User Interface `https://xxx.xxx.xxx.xxx:47990/`
 - You can use Environment variables in place of values

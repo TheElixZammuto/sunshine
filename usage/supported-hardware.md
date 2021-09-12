@@ -1,3 +1,7 @@
+---
+parent: Usage
+nav_order: 2
+---
 # Supported Hardware Configurations
 
 ## Supported Graphics Card

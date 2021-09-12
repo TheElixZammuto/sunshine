@@ -1,3 +1,7 @@
+---
+parent: Building
+nav_order: 2
+---
 # Building on Windows 10
 
 ## Requirements:

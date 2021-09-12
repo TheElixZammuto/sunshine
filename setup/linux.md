@@ -1,3 +1,7 @@
+---
+parent: Setup
+nav_order: 1
+---
 # Linux Setup
 sunshine needs access to uinput to create mouse and gamepad events:
 
