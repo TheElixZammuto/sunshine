@@ -1,3 +1,6 @@
+---
+nav_order: 1
+---
 # Sunshine
 Sunshine is a Gamestream host for Moonlight
 

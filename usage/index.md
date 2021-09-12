@@ -1,3 +1,7 @@
+---
+has_children: true
+nav_order: 3
+---
 # Usage
 - run "sunshine path/to/sunshine.conf"
 - Type in the URL bar of your browser: `https://xxx.xxx.xxx.xxx:47990` where `xxx.xxx.xxx.xxx` is the IP address of your computer
