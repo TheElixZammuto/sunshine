@@ -16,4 +16,4 @@ First you need to install [MSYS2](https://www.msys2.org), then startup "MSYS2 Mi
 - `cmake -G"Unix Makefiles" ..`
 - `mingw32-make`
 
-Continue here: [Setup](/setup/windows10.md)
+Continue here: [Setup](/setup/windows10.html)

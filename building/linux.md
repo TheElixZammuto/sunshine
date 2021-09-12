@@ -33,4 +33,4 @@ sudo apt install cmake gcc-10 g++-10 libssl-dev libavdevice-dev libboost-thread-
 - `cmake -DCMAKE_C_COMPILER=gcc-10 -DCMAKE_CXX_COMPILER=g++-10 ..`
 - `make -j ${nproc}`
 
-Continue here: [Setup](/setup/linux.md)
+Continue here: [Setup](/setup/linux.html)
