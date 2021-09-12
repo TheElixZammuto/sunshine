@@ -1,4 +1,22 @@
+collections:
+  building:
+    permalink: "/:collection/:path/"
+    output: true
+  setup:
+    permalink: "/:collection/:path/"
+    output: true
+  advanced:
+    permalink: "/:collection/:path/"
+    output: true
+
 title: "Sunshine"
 remote_theme: pmarsceill/just-the-docs
 color_scheme: "dark"
 search_enabled: false
+collections:
+    building:
+      name: Building
+    setup:
+      name: Setup
+    advanced:
+      name: Advanced
