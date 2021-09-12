@@ -1,4 +1,4 @@
-# Trouleshooting:
+# Trouleshooting
 - If you get "Could not create Sunshine Gamepad: Permission Denied", ensure you are part of the group "input":
 	- `groups $USER`
 	

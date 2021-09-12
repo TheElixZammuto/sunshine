@@ -1,4 +1,4 @@
-# Usage:
+# Usage
 - run "sunshine path/to/sunshine.conf"
 - Type in the URL bar of your browser: `https://xxx.xxx.xxx.xxx:47990` where `xxx.xxx.xxx.xxx` is the IP address of your computer
 	- Ignore any warning given by your browser about "insecure website"

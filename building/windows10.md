@@ -1,4 +1,4 @@
-# Windows 10
+# Building on Windows 10
 
 ## Requirements:
 
